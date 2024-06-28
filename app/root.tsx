@@ -18,7 +18,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="bg-org-white text-org-black">
+      <body className="bg-org-white text-org-black relative">
         <Header />
         <Sunny01 />
         {children}

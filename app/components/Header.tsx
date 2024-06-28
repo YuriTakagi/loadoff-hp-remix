@@ -2,7 +2,7 @@ import { Link } from "@remix-run/react";
 
 export default function Header() {
   return (
-    <nav className="p-4 flex items-baseline">
+    <nav className="p-4 flex items-baseline fixed z-10 top-0 left-0">
       <div className="text-4xl">
         <Link to="/">loadoff</Link>
       </div>

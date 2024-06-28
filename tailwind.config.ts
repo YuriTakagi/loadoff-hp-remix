@@ -7,7 +7,7 @@ export default {
       colors: {
         "org-white": "#efefef",
         "org-black": "#545454",
-      }
+      },
     },
   },
   plugins: [],
