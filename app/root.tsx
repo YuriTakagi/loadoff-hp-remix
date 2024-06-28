@@ -8,6 +8,17 @@ import {
 import "./tailwind.css";
 import Header from "./components/Header";
 import Sunny01 from "./components/Sunny01";
+import { LinksFunction } from "@remix-run/node";
+
+export const links: LinksFunction = () => {
+  return [
+    {
+      rel: "icon",
+      href: "/favicon.png",
+      type: "image/png"
+    }
+  ]
+}
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
