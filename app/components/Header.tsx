@@ -17,10 +17,22 @@ export default function Header() {
           <Link to="/contact">contact</Link>
         </li>
         <li>
-          <Link to="https://x.com/LoadoffI" target="_black" rel="noopener noreferrer">x</Link>
+          <Link
+            to="https://x.com/LoadoffI"
+            target="_black"
+            rel="noopener noreferrer"
+          >
+            x
+          </Link>
         </li>
         <li>
-          <Link to="https://www.instagram.com/loadoffinc?igsh=MXVpeGpoZ2tuNjhrNA==" target="_blank" rel="noopener noreferrer">instagram</Link>
+          <Link
+            to="https://www.instagram.com/loadoffinc?igsh=MXVpeGpoZ2tuNjhrNA=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            instagram
+          </Link>
         </li>
         <li>
           <Link to="/recruit">recruit</Link>
