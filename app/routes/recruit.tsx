@@ -2,16 +2,16 @@ import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "株式会社loadoff" },
-    { name: "description", content: "株式会社loadoffのホームページ" },
+    { title: "recruit | 株式会社loadoff" },
+    { name: "description", content: "株式会社loadoffのrecruit" },
   ];
 };
 
-export default function Index() {
+export default function Recruit() {
   return (
     <main className="font-sans">
       <div>
-        <h1 className="text-3xl">index</h1>
+        <h1 className="text-3xl">recruit</h1>
         <section>
           <h2>セクション1</h2>
         </section>
