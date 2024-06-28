@@ -22,7 +22,7 @@ export default function Header() {
             target="_black"
             rel="noopener noreferrer"
           >
-            x
+            <img src="/x.svg" alt="x link"/>
           </Link>
         </li>
         <li>
@@ -31,10 +31,10 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            instagram
+            <img src="/instagram.svg" alt="instagram link" />
           </Link>
         </li>
-        <li>
+        <li className="border rounded-full border-org-black px-10">
           <Link to="/recruit">recruit</Link>
         </li>
       </ul>
