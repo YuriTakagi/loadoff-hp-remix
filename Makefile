@@ -1,3 +1,4 @@
+.PHONY: build
 # 開発サーバー立ち上げ
 dev:
 	bunx --bun remix vite:dev
