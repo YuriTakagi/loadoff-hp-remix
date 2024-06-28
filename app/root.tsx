@@ -6,6 +6,8 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import "./tailwind.css";
+import Header from "./components/Header";
+import Sunny01 from "./components/Sunny01";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,7 +18,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-org-white text-org-black">
+        <Header />
+        <Sunny01 />
         {children}
         <ScrollRestoration />
         <Scripts />
