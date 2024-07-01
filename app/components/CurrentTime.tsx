@@ -49,4 +49,4 @@ export default function CurrentTime() {
       </p>
     </div>
   );
-};
+}

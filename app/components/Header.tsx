@@ -22,7 +22,7 @@ export default function Header() {
             target="_black"
             rel="noopener noreferrer"
           >
-            <img src="/x.svg" alt="x link"/>
+            <img src="/x.svg" alt="x link" />
           </Link>
         </li>
         <li>

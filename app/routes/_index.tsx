@@ -1,5 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
+import BoxTitle from "~/components/BoxTitle";
 import CurrentTime from "~/components/CurrentTime";
+import WeatherInfo from "~/components/WeatherInfo";
 
 export const meta: MetaFunction = () => {
   return [
@@ -14,6 +16,8 @@ export default function Index() {
       <div>
         <h1 className="text-3xl">index</h1>
         <CurrentTime />
+        <WeatherInfo />
+        <BoxTitle />
         <section>
           <h2>セクション1</h2>
         </section>

@@ -5,4 +5,4 @@ export default function BoxTitle() {
       <p>Three.js</p>
     </div>
   );
-};
+}
