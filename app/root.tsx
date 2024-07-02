@@ -7,6 +7,7 @@ import {
 } from "@remix-run/react";
 import "./tailwind.css";
 import type { LinksFunction } from "@remix-run/node";
+import { Suspense } from "react";
 import Header from "./components/Header";
 import Sunny01 from "./components/Sunny01";
 
@@ -16,6 +17,10 @@ export const links: LinksFunction = () => {
       rel: "icon",
       href: "/favicon.png",
       type: "image/png",
+    },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap",
     },
   ];
 };
@@ -29,9 +34,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="bg-org-white text-org-black relative">
+      <body className="bg-org-white text-org-black relative font-be-vietnam-pro">
         <Header />
-        <Sunny01 />
+        <Suspense fallback="">
+          <Sunny01 />
+        </Suspense>
         {children}
         <ScrollRestoration />
         <Scripts />
