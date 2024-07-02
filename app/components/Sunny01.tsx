@@ -142,7 +142,7 @@ const Sunny01 = () => {
   }, []);
 
   return (
-    <section className="h-[calc(100dvh-72.5px)]">
+    <section className="h-[calc(100dvh-72.5px)] w-5/6 mx-auto">
       <Canvas
         camera={{ fov: 50, position: [0, 3, 6] }}
         shadows
