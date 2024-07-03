@@ -12,6 +12,7 @@ export default {
       },
       letterSpacing: {
         "current-date-letter-spacing": "0.19rem",
+        "page-title-letter-spacing": "0.1125rem",
       },
       colors: {
         "org-white": "#efefef",

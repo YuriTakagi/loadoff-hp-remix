@@ -11,9 +11,11 @@ export default function About() {
   return (
     <main className="font-sans">
       <div>
-        <h1 className="text-3xl">about</h1>
+        <h1 className="text-2xl">about</h1>
         <section>
-          <h2>セクション1</h2>
+          <h2 className="text-8xl tracking-page-title-letter-spacing">
+            take a loadoff
+          </h2>
         </section>
         <section>
           <h2>セクション2</h2>

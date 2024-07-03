@@ -11,7 +11,7 @@ export default function Service() {
   return (
     <main className="font-sans">
       <div>
-        <h1 className="text-3xl">service</h1>
+        <h1 className="text-2xl">service</h1>
         <section>
           <h2>セクション1</h2>
         </section>
