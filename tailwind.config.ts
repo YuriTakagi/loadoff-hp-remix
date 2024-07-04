@@ -15,8 +15,10 @@ export default {
         "page-title-letter-spacing": "0.1125rem",
       },
       colors: {
-        "org-white": "#efefef",
-        "org-black": "#545454",
+        "day-bg": "#efefef",
+        "day-text-color": "#545454",
+        "night-bg": "#112028",
+        "night-text-color": "#FFF"
       },
     },
   },
