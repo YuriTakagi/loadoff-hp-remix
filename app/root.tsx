@@ -10,6 +10,8 @@ import type { LinksFunction } from "@remix-run/node";
 import { Suspense } from "react";
 import Header from "./components/Header";
 import Sunny01 from "./components/Sunny01";
+import ThemeProvider from "./provider/ThemeProvider";
+import WeatherInfoProvider from "./provider/WeatherInfoProvider";
 
 export const links: LinksFunction = () => {
   return [
@@ -34,14 +36,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="bg-org-white text-org-black relative font-be-vietnam-pro">
-        <Header />
-        <Suspense fallback="">
-          <Sunny01 />
-        </Suspense>
-        {children}
-        <ScrollRestoration />
-        <Scripts />
+      <body className="relative font-be-vietnam-pro">
+        <WeatherInfoProvider>
+          <ThemeProvider>
+            <Header />
+            <Suspense fallback="">
+              <Sunny01 />
+            </Suspense>
+            {children}
+            <ScrollRestoration />
+            <Scripts />
+          </ThemeProvider>
+        </WeatherInfoProvider>
       </body>
     </html>
   );
