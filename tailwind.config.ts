@@ -17,9 +17,13 @@ export default {
       colors: {
         "day-bg": "#efefef",
         "day-text-color": "#545454",
-        "night-bg": "#112028",
-        "night-text-color": "#FFF"
+        "night-bg": "#142028",
+        "night-text-color": "#FFF",
+        "night-bg-box-title": "#858B8F"
       },
+      height: {
+        "weather-info": "calc(100dvh - 10rem)"
+      }
     },
   },
   plugins: [],
