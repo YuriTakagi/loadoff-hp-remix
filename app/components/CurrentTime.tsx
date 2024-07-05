@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function CurrentTime() {
+export default function CurrentTime({ className }: { className: string }) {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -46,14 +46,16 @@ export default function CurrentTime() {
   const formattedFullDate = `${timeInJapan.toLocaleDateString("en-US", { weekday: "long" })}, ${timeInJapan.toLocaleDateString("en-US", { month: "long" })} ${dayWithSuffix}`;
 
   return (
-    <div className="text-center">
-      <p className="text-5.625 font-extralight">
-        <time>{formattedTime}</time>
-      </p>
-      <p className="tracking-current-date-letter-spacing">
-        Today
-        <span className="pl-4">{formattedFullDate}</span>
-      </p>
+    <div className={className}>
+      <div className="text-center">
+        <p className="text-5.625 font-extralight">
+          <time>{formattedTime}</time>
+        </p>
+        <p className="tracking-current-date-letter-spacing">
+          Today
+          <span className="pl-4">{formattedFullDate}</span>
+        </p>
+      </div>
     </div>
   );
 }

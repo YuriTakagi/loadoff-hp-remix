@@ -8,7 +8,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="p-12 flex fixed z-10 top-0 left-0 w-full">
+    <header className="p-12 flex fixed z-20 top-0 left-0 w-full">
       <div className="flex items-baseline justify-between w-full">
         <Link to="/">
           <img src="/loadoff.svg" alt="loadoffロゴ" />
@@ -74,7 +74,7 @@ export default function Header() {
       <div
         className={`fixed top-0 right-0 h-full bg-white transition-transform transform ${
           menuOpen ? "translate-x-0" : "translate-x-full"
-        } lg:hidden z-20 w-full p-12 shadow-lg`}
+        } lg:hidden z-30 w-full p-12 shadow-lg`}
       >
         <div className="flex justify-between items-baseline">
           <Link to="/" onClick={() => setMenuOpen(false)}>
@@ -117,9 +117,7 @@ export default function Header() {
             </ul>
           </div>
           <div className="mt-auto">
-            <div className="text-xs">
-              Soshigaya-okura Tokyo, JPN 時間
-            </div>
+            <div className="text-xs">Soshigaya-okura Tokyo, JPN 時間</div>
             <div className="flex items-center justify-between pt-10">
               <ul className="flex gap-2">
                 <li>
@@ -155,4 +153,3 @@ export default function Header() {
     </header>
   );
 }
-

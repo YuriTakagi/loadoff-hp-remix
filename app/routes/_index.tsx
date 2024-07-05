@@ -15,9 +15,7 @@ export default function Index() {
     <main className="font-sans">
       <div>
         <h1 className="text-3xl">index</h1>
-        <CurrentTime />
         <WeatherInfo />
-        <BoxTitle />
         <section>
           <h2>セクション1</h2>
         </section>

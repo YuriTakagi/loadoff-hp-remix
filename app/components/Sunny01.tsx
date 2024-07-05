@@ -11,6 +11,7 @@ import {
   Object3D,
   Shape,
 } from "three";
+import { useTheme } from "~/provider/ThemeProvider";
 
 const Plane = (props: PlaneProps) => {
   const [ref] = usePlane(() => ({ ...props }), useRef<Mesh>(null));
@@ -130,6 +131,8 @@ const COLORS = [
 const Sunny01 = () => {
   const number = 150;
   const size = 0.2;
+  // const theme = useTheme();
+  // const canvasColor = theme === "day" ? "rgb(239, 239, 239)" : "rgb(17, 32, 40)";
   const canvasColor = "rgb(239, 239, 239)";
 
   const colors = useMemo(() => {
