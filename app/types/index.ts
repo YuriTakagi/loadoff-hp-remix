@@ -42,9 +42,10 @@ type WeatherInfo = {
   };
 };
 
-type WeatherCode = {
+type WeatherCodeAndImage = {
   code: number;
   description: string;
+  image: string;
 };
 
 type ThemeType = "day" | "night" | null;
